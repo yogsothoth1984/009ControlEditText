@@ -12,9 +12,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="83dp"
         android:layout_marginTop="95dp"
+        android:layout_marginBottom="185dp"
         android:ems="10"
         android:hint="Usuario"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Verificar_con_Intent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -38,4 +40,15 @@
         app:layout_constraintEnd_toEndOf="@+id/editClave"
         app:layout_constraintStart_toStartOf="@+id/editClave"
         app:layout_constraintTop_toBottomOf="@+id/editClave" />
+
+    <Button
+        android:id="@+id/Verificar_con_Intent"
+        android:layout_width="136dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginBottom="326dp"
+        android:text="Verifica /n con /n Intent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editUsuario" />
 </android.support.constraint.ConstraintLayout>
