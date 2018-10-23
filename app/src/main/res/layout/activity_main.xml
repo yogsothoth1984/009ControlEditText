@@ -16,7 +16,7 @@
         android:ems="10"
         android:hint="Usuario"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/Verificar_con_Intent"
+        app:layout_constraintBottom_toTopOf="@+id/Verificar2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,18 +36,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="37dp"
-        android:text="Verificar"
+        android:text="Verificar por parametros"
         app:layout_constraintEnd_toEndOf="@+id/editClave"
         app:layout_constraintStart_toStartOf="@+id/editClave"
         app:layout_constraintTop_toBottomOf="@+id/editClave" />
 
     <Button
-        android:id="@+id/Verificar_con_Intent"
+        android:id="@+id/Verificar2"
         android:layout_width="136dp"
         android:layout_height="0dp"
         android:layout_marginStart="125dp"
         android:layout_marginBottom="326dp"
-        android:text="Verifica /n con /n Intent"
+        android:text="Verifica por getter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editUsuario" />
