@@ -15,7 +15,7 @@ public class Listener_Verificar implements View.OnClickListener {
         this.editClave = editClave;
         this.editUsuario = editUsuario;
     }
-    //En este metodo se los paso por parametro del listener
+    //En este metodo se los paso por parametro del listener1
     @Override
     public void onClick(View v) {
         String usuario = editUsuario.getText().toString();
