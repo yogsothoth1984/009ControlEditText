@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.a009controledittext.Listener.Listener_Verificar;
 
@@ -22,7 +23,9 @@ public class MainActivity extends AppCompatActivity {
         buttVerificar=findViewById(R.id.buttVerificar);
 
         //Boton
-        Listener_Verificar listener_verificar=new Listener_Verificar(this);
+        Listener_Verificar listener_verificar=new Listener_Verificar(this,editClave,editUsuario);
         buttVerificar.setOnClickListener(listener_verificar);
+
+
     }
 }
