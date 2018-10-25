@@ -4,7 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Activity.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+    </android.support.v7.widget.Toolbar>
 
     <EditText
         android:id="@+id/editUsuario"
@@ -12,11 +27,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="83dp"
         android:layout_marginTop="95dp"
-        android:layout_marginBottom="185dp"
         android:ems="10"
         android:hint="Usuario"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/Verificar2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -35,20 +48,12 @@
         android:id="@+id/buttVerificar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="37dp"
-        android:text="Verificar por parametros"
+        android:layout_marginTop="35dp"
+        android:text="Verificar"
         app:layout_constraintEnd_toEndOf="@+id/editClave"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/editClave"
-        app:layout_constraintTop_toBottomOf="@+id/editClave" />
+        app:layout_constraintTop_toBottomOf="@+id/editClave"
+        tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/Verificar2"
-        android:layout_width="136dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="125dp"
-        android:layout_marginBottom="326dp"
-        android:text="Verifica por getter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editUsuario" />
 </android.support.constraint.ConstraintLayout>
