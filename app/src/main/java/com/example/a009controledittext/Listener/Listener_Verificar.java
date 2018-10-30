@@ -21,7 +21,7 @@ public class Listener_Verificar implements View.OnClickListener {
     //En este metodo se los paso por parametro del listener1
     @Override
     public void onClick(View v) {
-        if (contextListener.user.length()==0){
+        if (user.length()==0){
             Toast.makeText(contextListener,"El usuario no puede quedar vacia",Toast.LENGTH_LONG).show();
             if (pass.length()==0){//El método length() de la clase String sirve para ver cuantos caracteres se ingresaron.
                 Toast.makeText(contextListener,"La clave no puede quedar vacia",Toast.LENGTH_LONG).show();

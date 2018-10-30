@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         editUsuario=findViewById(R.id.editUsuario);
         editClave=findViewById(R.id.editClave);
         buttVerificar=findViewById(R.id.buttVerificar);
-        toolbar=findViewById(R.id.id_toolbar);
+        toolbar=findViewById(R.id.Id_toolbar);
 
         //Variables para pasar,asi no uso los objetos
         String user=editUsuario.getText().toString();
@@ -32,6 +32,13 @@ public class MainActivity extends AppCompatActivity {
         //Boton 1
         Listener_Verificar listener_verificar=new Listener_Verificar(this,user,pass);
         buttVerificar.setOnClickListener(listener_verificar);
+        //Toolbar
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Control EditText");
+        getSupportActionBar().setLogo(R.drawable.ic_launcher_background);
+        //menu 3 puntos
+
+
 
     }
 }
